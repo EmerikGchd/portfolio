@@ -346,7 +346,8 @@
           <div class="certif-logo">📜</div>
           <div class="certif-body">
             <div class="certif-issuer">Root ME PRO</div>
-            <h4 class="certif-title">EDU | SIO - BTS 1e - Essentiel</h4>
+            <h4 class="certif-title">EDU | SIO - BTS Première Année - Essentiel</h4>
+            <h4 class="certif-title">EDU | SIO - BTS Deuxième Année - SLAM </h4>
             <p class="certif-date">2025 — 2026</p>
             <div class="certif-tags">
               <span class="tag">BTS SIO</span>
@@ -405,15 +406,17 @@
       <div class="stage-card" onclick="openStage('stage1')">
         <div class="stage-card-header">
           <div class="stage-year-badge">1ère année</div>
-          <div class="stage-status pending">En cours</div>
+          <div class="stage-status obtained">Terminé</div>
         </div>
         <div class="stage-icon">🏢</div>
         <h3 class="stage-title">Stage — 1ère année BTS SIO</h3>
-        <p class="stage-company">Abicom Groupe OCI</p>
-        <p class="stage-desc">Durée : 7 semaines · Période : 2026</p>
+        <p class="stage-company">Abicom — Groupe OCI</p>
+        <p class="stage-desc">Durée : 7 semaines · Mai — Juillet 2026</p>
         <div class="stage-tags">
-          <span class="tag">BTS SIO SLAM</span>
-          <span class="tag">1ère année</span>
+          <span class="tag tag-accent">Python / Flask</span>
+          <span class="tag">Docker</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Git</span>
         </div>
         <div class="stage-cta">Voir le suivi <span class="stage-arrow">→</span></div>
       </div>
@@ -447,17 +450,32 @@
       <div class="stage-modal-header">
         <div class="stage-year-badge">1ère année</div>
         <h2>Stage 1ère année BTS SIO</h2>
-        <p class="stage-modal-meta">🏢 Entreprise à définir &nbsp;·&nbsp; 📅 2026 &nbsp;·&nbsp; ⏱ 7 semaines</p>
+        <p class="stage-modal-meta">🏢 Abicom — Groupe OCI &nbsp;·&nbsp; 📅 Mai — Juillet 2026 &nbsp;·&nbsp; ⏱ 7 semaines</p>
       </div>
       <div class="stage-modal-body">
+        <p style="color:rgba(240,240,240,0.6);font-size:0.9rem;margin-bottom:2rem;line-height:1.6;">
+          <strong style="color:rgba(240,240,240,0.85);">Projet : abiConfig Manager &amp; abiConfig Central</strong><br>
+          Développement d'une solution web de sauvegarde, d'historisation et de suivi des configurations réseau pour les clients d'Abicom.
+          Le Manager gère l'inventaire des équipements et leurs sauvegardes en local, tandis que Central centralise les statuts de plusieurs sites sans exposer les données sensibles.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:2rem;">
+          <span class="tag tag-accent">Python / Flask</span>
+          <span class="tag tag-accent">SQLite</span>
+          <span class="tag">Docker Compose</span>
+          <span class="tag">Git</span>
+          <span class="tag">Oxidized</span>
+          <span class="tag">SSH</span>
+          <span class="tag">API REST</span>
+          <span class="tag">TOTP / MFA</span>
+        </div>
         <div class="stage-weeks">
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 1</div><div class="week-text">À compléter — prise en main de l'environnement, découverte de l'équipe et des outils.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 2</div><div class="week-text">À compléter.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 3</div><div class="week-text">À compléter.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 4</div><div class="week-text">À compléter.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 5</div><div class="week-text">À compléter.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 6</div><div class="week-text">À compléter.</div></div></div>
-          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 6</div><div class="week-text">À compléter — bilan et restitution.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 1</div><div class="week-text">Analyse du besoin initial et étude des solutions existantes. Reformulation de la demande, identification des acteurs et des contraintes de sécurité. Installation et tests de LibreNMS et Oxidized pour la supervision et la collecte de configurations réseau par SSH.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 2</div><div class="week-text">Configuration d'Oxidized pour plusieurs constructeurs (Aruba, Dell, HP, FortiGate) et historisation des configurations avec Git. Identification des limites : algorithmes SSH anciens, commandes propres à chaque constructeur, incompatibilité Stormshield.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 3</div><div class="week-text">Conception de l'architecture d'abiConfig Manager : modèle de données SQLite, structure des routes Flask, gestion des rôles utilisateurs et définition des modes de sauvegarde (Oxidized, script Stormshield, import manuel).</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 4</div><div class="week-text">Développement de l'inventaire des équipements et de l'interface web. Formulaires d'ajout/modification avec validation, tableau de bord des statuts, consultation de l'historique Git et comparaison entre versions de configurations.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 5</div><div class="week-text">Intégration d'Oxidized et Git dans le Manager, développement du script de sauvegarde Stormshield (connexion SSH avec OpenSSH) et mise en place du mode d'import manuel. Sécurisation : hachage des mots de passe, CSRF, TOTP et contrôle des rôles.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 6</div><div class="week-text">Conception et développement d'abiConfig Central : API REST de réception des statuts, authentification par clé API individuelle, tableau de bord multi-clients et synchronisation HTTPS sortante depuis les Managers. Mission secondaire : audit Wi-Fi sur site à Feurs.</div></div></div>
+          <div class="week-item"><div class="week-dot"></div><div class="week-content"><div class="week-label">Semaine 7</div><div class="week-text">Tests fonctionnels complets (authentification, sauvegardes, synchronisation, gestion des erreurs), conteneurisation avec Docker Compose, rédaction de la documentation technique et des procédures d'installation. Remise des livrables à l'entreprise.</div></div></div>
         </div>
       </div>
     </div>
